@@ -1,0 +1,9 @@
+[package]
+name = "Rust-Sqlite-Connect"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+sqlx = { version = "0.8.6", features = [ "runtime-async-std-native-tls", "sqlite" ] }
+async-std = { version = "1.6", features = [ "attributes" ] }
+futures = "0.3.18"
